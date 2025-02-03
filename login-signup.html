@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Sign Up - Samsara Fest 2025</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section (same as index.html) -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Samsara Fest 2025</h1>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="lineup.html">Line-Up</a></li>
+                    <li><a href="tickets.html">Tickets</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login-signup.html" class="btn active">Login / Sign Up</a></li> <!-- Active link for Login / Sign Up page -->
+                    <!-- Shopping Cart Icon -->
+                    <li><a href="#" class="cart-icon">
+                        <img src="images/shopping_cart.png" alt="Cart">
+                    </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content for Login / Sign Up -->
+    <main>
+        <div class="container">
+            <h2>Login / Sign Up</h2>
+            
+            <!-- Login Form -->
+            <div class="login-form">
+                <h3>Login</h3>
+                <form action="login-handler.php" method="POST">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <button type="submit" class="btn">Login</button>
+                </form>
+            </div>
+
+            <!-- Sign Up Form -->
+            <div class="signup-form">
+                <h3>Sign Up</h3>
+                <form action="signup-handler.php" method="POST">
+                    <label for="new-username">Username</label>
+                    <input type="text" id="new-username" name="new-username" required>
+
+                    <label for="new-email">Email</label>
+                    <input type="email" id="new-email" name="new-email" required>
+
+                    <label for="new-password">Password</label>
+                    <input type="password" id="new-password" name="new-password" required>
+
+                    <button type="submit" class="btn">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

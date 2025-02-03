@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #54D0C6, #8AC06A, #F29373, #EB82EA);
+    color: #333;
+    line-height: 1.6;
+}
+
+.header {
+    background: linear-gradient(to right, #54D0C6, #8AC06A, #F29373, #EB82EA);
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.navbar ul li {
+    margin: 0 1rem;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a.active {
+    color: #ffb400;
+}
+
+.navbar ul li a:hover {
+    color: #ffb400;
+}
+
+/* Cart Icon styling */
+.cart-icon {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.cart-icon img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.cart-icon:hover img {
+    transform: scale(1.1);
+}
+
+.hero {
+    background: 
+        url('images/samsara_logo.png') no-repeat center center/contain,
+        url('images/crowd.jpeg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    background-color: #ffb400;
+    color: #333;
+    padding: 0.7rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff9900;
+}
+
+.about, .lineup, .tickets {
+    padding: 3rem 1rem;
+    margin: 2rem 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.lineup-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.artist {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+.footer .social-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.footer .social-links li {
+    margin: 0 0.5rem;
+}
+
+.footer .social-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer .social-links a:hover {
+    color: #ffb400;
+}
+
+/* Login / Sign Up Form Styling */
+.login-form, .signup-form {
+    background-color: #fff;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h3, .signup-form h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.login-form label, .signup-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.login-form input, .signup-form input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form button, .signup-form button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #ffb400;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.login-form button:hover, .signup-form button:hover {
+    background-color: #ff9900;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000; /* Ensures the wrapper has a black background while video loads */
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
